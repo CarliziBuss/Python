@@ -1,0 +1,16 @@
+def menor_nome(nomes):
+    
+    tamanho = len(nomes) 
+    menor = '' 
+    lista_limpa = [] 
+    
+    for str in nomes:
+        lista_limpa.append(str.strip())
+        
+    
+    menor = lista_limpa[0] 
+    for str in lista_limpa:
+        if len(str) < len(menor):  
+            menor = str
+            
+    return menor.capitalize() 
